@@ -1,5 +1,19 @@
-$some-color: rgb(213, 123, 12);
-
-.coloured-bg {
-  background-color: $some-color;
-}
+.main-div {
+    width: 100vw;
+    text-align: center;
+    padding: 5rem;
+  }
+  
+  body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    display: block;
+    margin: auto;
+    width: 500px;
+  }
+  
