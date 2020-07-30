@@ -5,9 +5,9 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import { usePromiseTracker } from "react-promise-tracker";
 import Loader from "react-loader-spinner";
 import { JokeComponent } from "./jokeComponent";
-const classes = require("./mystyles.scss");
+import "./mystyles.scss";
 
-const LoadingIndicator = (props) => {
+const LoadingIndicator = () => {
   const { promiseInProgress } = usePromiseTracker();
 
   return (
@@ -21,16 +21,16 @@ const LoadingIndicator = (props) => {
           alignItems: "center",
         }}
       >
-        <Loader type="ThreeDots" color="#2BAD60" height="100" width="100" />
+        <Loader type="Puff" color="#00BFFF" height="100" width="100" />
       </div>
     )
   );
 };
 
 ReactDOM.render(
-  <div className={classes.mainDiv}>
+  <div className="main-div">
     <div className="jumbotron">
-      <h1>Laboratorio Módulo 3 - Bundling con Parcel</h1>
+      <h1>Laboratorio Módulo 3 - Bundling with Parcel</h1>
     </div>
     <LoadingIndicator />
     <JokeComponent />

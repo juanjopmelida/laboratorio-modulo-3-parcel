@@ -1,7 +1,7 @@
 import React from "react";
 import { trackPromise } from "react-promise-tracker";
+import "./jokeComponentStyles.scss";
 const imgThinking = require("./content/thinking.gif");
-const classes = require("./jokeComponentStyles.scss");
 
 export const JokeComponent = () => {
   const [Joke, setJoke] = React.useState({
@@ -57,7 +57,7 @@ export const JokeComponent = () => {
 
   return (
     <div id="joke-container">
-      <h1 className={classes.jokeBackground}>{Joke.setup}</h1>
+      <h1 className="joke-background">{Joke.setup}</h1>
     </div>
   );
 };
