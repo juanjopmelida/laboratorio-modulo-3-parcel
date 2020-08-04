@@ -5,7 +5,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import { usePromiseTracker } from "react-promise-tracker";
 import Loader from "react-loader-spinner";
 import { JokeComponent } from "./jokeComponent";
-import "./css/styles.scss";
+import "./scss/styles.scss";
 
 const LoadingIndicator = () => {
   const { promiseInProgress } = usePromiseTracker();

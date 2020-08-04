@@ -1,6 +1,6 @@
 import React from "react";
 import { trackPromise } from "react-promise-tracker";
-import "./css/jokeComponentStyles.scss";
+import "./scss/jokeComponentStyles.scss";
 const imgThinking = require("./content/thinking.gif");
 
 export const JokeComponent = () => {
