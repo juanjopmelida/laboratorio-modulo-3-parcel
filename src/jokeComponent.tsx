@@ -1,6 +1,6 @@
 import React from "react";
 import { trackPromise } from "react-promise-tracker";
-import "./jokeComponentStyles.scss";
+import "./css/jokeComponentStyles.scss";
 const imgThinking = require("./content/thinking.gif");
 
 export const JokeComponent = () => {
@@ -54,7 +54,7 @@ export const JokeComponent = () => {
     img.src = imgThinking;
     document.getElementById("joke-container").appendChild(img);
   };
-
+//prueba ligaduras
   return (
     <div id="joke-container">
       <h1 className="joke-background">{Joke.setup}</h1>

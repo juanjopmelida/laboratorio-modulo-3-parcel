@@ -5,22 +5,14 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import { usePromiseTracker } from "react-promise-tracker";
 import Loader from "react-loader-spinner";
 import { JokeComponent } from "./jokeComponent";
-import "./mystyles.scss";
+import "./css/styles.scss";
 
 const LoadingIndicator = () => {
   const { promiseInProgress } = usePromiseTracker();
 
   return (
     promiseInProgress && (
-      <div
-        style={{
-          width: "100%",
-          height: "100",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <div className="loader">
         <Loader type="Puff" color="#00BFFF" height="100" width="100" />
       </div>
     )

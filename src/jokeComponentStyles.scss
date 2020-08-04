@@ -1,8 +1,0 @@
-@mixin random-colors() {
-  background: rgb(random(255), random(255), random(255));
-  color: rgb(random(255), random(255), random(255));
-}
-
-.joke-background {
-  @include random-colors();
-}
